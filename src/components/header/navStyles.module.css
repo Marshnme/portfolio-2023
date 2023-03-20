@@ -1,0 +1,16 @@
+.navContainer {
+    padding: 2rem 2rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+
+}
+
+.navContainer ul {
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+}
