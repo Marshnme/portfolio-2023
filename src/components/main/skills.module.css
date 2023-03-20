@@ -1,1 +1,22 @@
-.skillList {}
+.skillSection {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center;
+    margin: 2rem 0rem;
+}
+
+.skillSection h3 {
+    font-size: 3rem;
+    border-bottom: 1px solid black;
+    width: 15rem;
+    margin-bottom: 1rem;
+}
+
+.skillList img {
+    margin-bottom: 1.5rem;
+}
+
+.skillList p {
+    font-size: 1.5rem;
+}
