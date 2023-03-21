@@ -28,6 +28,7 @@ export default function Home() {
 					<h2>
 						Joshua <br></br> Holtsclaw
 					</h2>
+
 					<p className={styles.role}>Frontend Developer</p>
 				</section>
 			</header>

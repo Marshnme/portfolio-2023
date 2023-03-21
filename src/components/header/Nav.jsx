@@ -5,7 +5,6 @@ const Nav = () => {
 		<div className={styles.navContainer}>
 			<ul>
 				<li>Home</li>
-				<li>Skills</li>
 				<li>Projects</li>
 				<li>About</li>
 				<li>Contact</li>

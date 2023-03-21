@@ -1,6 +1,8 @@
+import styles from './projects.module.css';
+
 const Projects = () => {
 	return (
-		<section>
+		<section className={styles.projectList}>
 			<h3>Projects</h3>
 		</section>
 	);
