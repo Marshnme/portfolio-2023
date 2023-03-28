@@ -6,9 +6,14 @@ import * as z from 'zod';
 const Contact = () => {
 	const schema = z.object({
 		email: z.string().email({ message: 'Invalid email address' }),
-		fullName: z
+		firstName: z.string().min(1, { message: 'First Name is required.' }),
+
+		lastName: z.string().min(1, { message: 'Last Name is required.' }),
+
+		contactMessage: z
 			.string()
-			.min(3, { message: 'Minimum of three characters required.' }),
+			.min(1, { message: 'Message is a required field' })
+			.max(500, { message: 'Max Length of 500 Characters' }),
 	});
 
 	const {
@@ -21,21 +26,39 @@ const Contact = () => {
 	const onSubmit = (data) => console.log(data);
 	// watch input value by passing the name of it
 	// console.log(watch('email'));
+	let messageWatch = watch('contactMessage');
+	console.log(messageWatch);
 	return (
 		<section className={styles.contactContainer}>
 			<h3>Contact</h3>
 			<form onSubmit={handleSubmit(onSubmit)}>
 				<input
-					placeholder="Full Name"
-					{...register('fullName', { required: true })}
+					placeholder="First Name"
+					{...register('firstName', { required: true })}
 				/>
-				<p>{errors.fullName?.message}</p>
+				<p>{errors.firstName?.message}</p>
+				<input
+					placeholder="last Name"
+					{...register('lastName', { required: true })}
+				/>
+				<p>{errors.lastName?.message}</p>
 				<input
 					placeholder="Email Address"
 					{...register('email', { required: true })}
 				/>
 				<p>{errors.email?.message}</p>
-				<input type="submit" />
+				<textarea
+					{...register('contactMessage', {
+						required: true,
+					})}
+					cols="30"
+					rows="10"
+					placeholder="Enter Your Message"
+				></textarea>
+				<p>{errors.contactMessage?.message}</p>
+				<div>
+					<button type="submit">Send Message</button>
+				</div>
 			</form>
 		</section>
 	);
