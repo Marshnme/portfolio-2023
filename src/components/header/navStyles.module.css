@@ -14,3 +14,7 @@
     list-style-type: none;
     gap: 1rem;
 }
+
+.navContainer ul li {
+    cursor: pointer;
+}
