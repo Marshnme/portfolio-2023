@@ -11,3 +11,13 @@
     width: 15rem;
     margin-bottom: 1rem;
 }
+
+.contactContainer form {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: .5rem
+}
+
+.contactContainer textarea {
+    resize: none;
+}
