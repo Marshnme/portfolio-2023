@@ -18,9 +18,9 @@ export default function Home() {
 				/>
 				<meta
 					name="viewport"
+					typeof="image"
 					content="width=device-width, initial-scale=1"
 				/>
-				<link rel="icon" href="#" />
 			</Head>
 			<header className={styles.header}>
 				<Nav />

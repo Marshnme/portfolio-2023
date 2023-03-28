@@ -3,6 +3,8 @@
     flex-flow: column nowrap;
     align-items: center;
     text-align: center;
+    margin: 0 10%;
+
 }
 
 .aboutContainer h3 {
@@ -10,4 +12,8 @@
     border-bottom: 1px solid black;
     width: 15rem;
     margin-bottom: 1rem;
+}
+
+.aboutContainer .aboutDesc {
+    font-size: 1.2rem;
 }
