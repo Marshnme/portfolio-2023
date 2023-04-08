@@ -3,6 +3,7 @@
     flex-flow: column nowrap;
     align-items: center;
     text-align: center;
+
 }
 
 .contactContainer h3 {
@@ -15,9 +16,18 @@
 .contactContainer form {
     display: flex;
     flex-flow: column nowrap;
-    gap: .5rem
+    gap: .5rem;
+
 }
 
 .contactContainer textarea {
     resize: none;
+}
+
+.contactContainer .formSubmit {
+    padding: .5rem 1rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
 }

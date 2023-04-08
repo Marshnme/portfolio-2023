@@ -22,6 +22,7 @@ export default function Home() {
 					content="width=device-width, initial-scale=1"
 				/>
 			</Head>
+
 			<header className={styles.header}>
 				<Nav />
 				<section className={styles.headerContent}>
@@ -30,9 +31,13 @@ export default function Home() {
 					</h2>
 
 					<p className={styles.role}>Frontend Developer</p>
+					<div className={styles.callToActionButtons}>
+						<button className={styles.resumeButton}>Resume</button>
+						<button className={styles.githubButton}>Github</button>
+					</div>
 				</section>
 			</header>
-			<main>
+			<main className={styles.main}>
 				<Skills />
 				<Projects />
 				<About />

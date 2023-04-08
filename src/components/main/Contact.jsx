@@ -38,7 +38,7 @@ const Contact = () => {
 				/>
 				<p>{errors.firstName?.message}</p>
 				<input
-					placeholder="last Name"
+					placeholder="Last Name"
 					{...register('lastName', { required: true })}
 				/>
 				<p>{errors.lastName?.message}</p>
@@ -57,7 +57,9 @@ const Contact = () => {
 				></textarea>
 				<p>{errors.contactMessage?.message}</p>
 				<div>
-					<button type="submit">Send Message</button>
+					<button className={styles.formSubmit} type="submit">
+						Send Message
+					</button>
 				</div>
 			</form>
 		</section>

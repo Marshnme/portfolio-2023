@@ -4,9 +4,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
-
-
+    color: black;
+    background-color: #D5EEFF;
 }
 
 .navContainer ul {
